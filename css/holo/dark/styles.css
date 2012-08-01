@@ -202,6 +202,11 @@ a[data-rel="action"] span span.ui-icon {
 	background: transparent url(../images/holo_dark/mdpi/5-content-edit.png) no-repeat left top !important;
 }
 
+.btn-txt {
+	padding: 10px;
+	margin: 0px;
+}
+
 
 .btn {
 	padding: 5px;
