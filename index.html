@@ -25,17 +25,14 @@
 		});
 	</script>
 	<script src="js/jquery.mobile-1.1.0.min.js"></script>
-	
-    
 
 </head> 
 <body> 
  
 <div data-role="page"> 
  
-	<div data-role="header" data-position="fixed"> 
-		<h1>Page Header</h1>
-		
+	<div data-icon="logo" data-role="header" data-position="fixed"> 
+		<h1>APP NAME</h1>		
 	</div><!-- /header --> 
 	
 	
@@ -43,32 +40,32 @@
 		<ul>
 			<li>
 				<a href="#" data-theme="" data-icon="" class="ui-btn-active ui-state-persist">
-					Button
+					Tab uno
 				</a>
 			</li>
 			<li>
 				<a href="#footerTabs" data-theme="" data-icon="">
-					Footer Tabs
+					Tab dos
 				</a>
 			</li>
 			<li>
 				<a href="#" data-theme="" data-icon="">
-					Button
+					Tab tres
 				</a>
 			</li>
 		</ul>
 	</div>
 	
-	<div class="ui-grid-a show-border">
+	<div class="ui-grid-a show-border-bottom">
 		<div class="ui-block-a grid8020a">
 			<h4 class="btn-txt">
-				Heading
+				Enlance a cualquier web
 			</h4>
 		</div>
 		<div class="ui-block-b grid8020b center">
 			
 			<div class="btn">
-				<a href="#footerTabs" data-theme="">
+				<a href="http://www.google.com" target="_blank" data-theme="">
 					<img src="css/holo/images/holo_light/xhdpi/7-location-web-site.png" width="32" border="0" />
 				</a>
 			</div>
@@ -76,14 +73,24 @@
 		</div>
 	</div>
  
+		
 	<div data-role="content"> 
-		<p>
-			
-			Gracias por usar Holo Holo Theme inspired 
-			
-		</p> 
+
+		<p>Gracias por usar Holo Holo Theme inspired by Android ICS</p>	
+		
+		<ul data-role="listview" data-inset="true"> 
+			<li><a href="#headers">Header Bars</a></li> 
+			<li><a href="#headerButtons">Header Buttons</a></li> 
+			<li><a href="#footerTabs">Footer Tabs</a></li> 
+			<li><a href="#formElements">Form Elements</a></li> 
+			<li><a href="#listViews">List Views</a></li> 
+			<li><a href="#dialogs">Dialogs</a></li> 
+		</ul>
  
-			
+	</div><!-- /ui-body wrapper -->
+
+	<div data-role="full-list" class="full-list">
+		
 		<ul data-role="listview" data-inset="true"> 
 			<li><a href="#headers">Header Bars</a></li> 
 			<li><a href="#headerButtons">Header Buttons</a></li> 
@@ -93,12 +100,10 @@
 			<li><a href="#dialogs">Dialogs</a></li> 
 			<!--<li><a href="api-pages.html">API documentation</a></li>--> 
 		</ul> 
-					
-		
-		
+
 		<p>Welcome to the jungle</p>
- 
-	</div><!-- /ui-body wrapper -->
+
+	</div>
 	
 </div><!-- /page --> 
   

@@ -13,19 +13,24 @@
 /* ROBOTO FONT */
 
 * {
-    font-family: "RobotoRegular",sans-serif;
+    font-family: "RobotoThRegular",sans-serif;
 }
 
 .show-border {
 	border:1px solid #CCC;
 }
 
+.show-border-bottom {
+	border-bottom: 1px solid #CCC;
+}
+
+
 /* === PAGE BACKGROUND AND GENERICS === */
 .ui-page, .ui-mobile-viewport {
 	background: #0d0d0d;
     background: #e8e3dc;
 	background: #E9E9E9;
-    font-family: "RobotoRegular",sans-serif;
+    font-family: "RobotoThRegular",sans-serif;
 }
 
 .ui-content {
@@ -33,6 +38,17 @@
 	/*color: #F9F9F9;*/
 	text-shadow: none !important;
 }
+
+
+.full-list .ui-listview-inset .ui-li {
+	border-right-width: 0px !important;
+	border-left-width: 0px !important;
+}
+
+.full-list p {
+	padding:15px;
+}
+
 
 .ui-page-header-fullscreen .ui-content, .ui-page-footer-fullscreen .ui-content{
     padding-top: 39px;
@@ -83,13 +99,30 @@
 }
 
 .ui-header .ui-title {
-    font-family: "RobotoMdRegular",sans-serif;
+    font-family: "RobotoThRegular",sans-serif !important;
     color:#FFF;
 	text-shadow:0px 0px 3px rgba(0,0,0,0.3) !important;
 	/*margin: .6em 8% .8em !important;*/
 	margin: .6em 0em .6em 2.4em;
 	text-align: left;
 }
+
+
+div[data-icon="logo"] {
+	padding: 0px !important;
+}
+
+div[data-icon="logo"] h1 {
+	background: transparent url(../../logo.png) no-repeat left top !important;
+	background-size: 28px 28px !important;
+	margin-left:1em !important;
+	height: 23px;
+	padding-left:2em !important;
+	padding-top: 5px !important;
+	/*color: #BEBEBE;
+	content: url("../../logo.png") " 30px " attr(width);*/
+}
+
 
 /* === HEADER BUTTONS === */
 
@@ -106,7 +139,8 @@
 }
 
 a[data-rel="back"] {
-	background: transparent url(../images/holo_dark/mdpi/1-navigation-previous-item.png) no-repeat left top;
+	background: transparent url(../images/holo_dark/xhdpi/1-navigation-previous-item.png) no-repeat left top;
+	background-size: 32px 32px;
 	border: 0px solid #000 !important;
 	
 	height: 32px;
@@ -129,6 +163,7 @@ a[data-rel="back"] span {
 
 a[data-rel="action"] {
 	background: transparent;
+	background-size: 32px 32px !important;
 	border: 0px solid #000 !important;
 	padding: 0px !important;
 	
@@ -182,28 +217,33 @@ a[data-rel="action"] span span.ui-icon {
 		-webkit-box-shadow: none !important;
 }
 
-.ui-icon-edit {
-	background: transparent url(../images/holo_dark/mdpi/5-content-edit.png) no-repeat left top !important;
+a[data-icon="edit"] {
+	background: transparent url(../images/holo_dark/xhdpi/5-content-edit.png) no-repeat center center !important;
+	background-size: 32px 32px !important;
+} 
+
+a[data-icon="black"] {
+	background: transparent url(../images/holo_dark/xhdpi/1-navigation-refresh.png) no-repeat left top !important;
+	background-size: 32px 32px !important;
 }
 
-.ui-icon-black {
-	background: transparent url(../images/holo_dark/mdpi/1-navigation-refresh.png) no-repeat left top !important;
+a[data-icon="delete"] {
+	background: transparent url(../images/holo_dark/xhdpi/1-navigation-cancel.png) no-repeat left top !important;
+	background-size: 32px 32px !important;
 }
 
-.ui-icon-delete {
-	background: transparent url(../images/holo_dark/mdpi/1-navigation-cancel.png) no-repeat left top !important;
+a[data-icon="done"] {
+	background: transparent url(../images/holo_dark/xhdpi/1-navigation-accept.png) no-repeat left top !important;
+	background-size: 32px 32px !important;
 }
 
-.ui-icon-done {
-	background: transparent url(../images/holo_dark/mdpi/1-navigation-accept.png) no-repeat left top !important;
-}
-
-.ui-icon-something {
-	background: transparent url(../images/holo_dark/mdpi/5-content-edit.png) no-repeat left top !important;
+a[data-icon="something"] {
+	background: transparent url(../images/holo_dark/xhdpi/5-content-edit.png) no-repeat left top !important;
+	background-size: 32px 32px !important;
 }
 
 .btn-txt {
-	padding: 10px;
+	padding: 13px 10px;
 	margin: 0px;
 }
 
@@ -240,7 +280,7 @@ a[data-rel="action"] span span.ui-icon {
 
 
 .ui-navbar .ui-btn-text {
-    font-family: "RobotoRegular",sans-serif !important;
+    font-family: "RobotoThRegular",sans-serif !important;
 }
 
 .ui-navbar .ui-btn {
@@ -260,7 +300,7 @@ a[data-rel="action"] span span.ui-icon {
     background-image:        linear-gradient( #333333,#333333 );
 }
 
-.ui-navbar  .ui-btn-active , .ui-navbar .ui-btn:hover  {
+.ui-navbar  .ui-btn-active , .ui-navbar .ui-btn:active  {
     border:0px solid #e1e1e1 ;
     background:#333333 ;
     font-weight:bold;
